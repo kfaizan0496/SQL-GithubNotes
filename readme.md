@@ -80,7 +80,7 @@ create college;
 
 ## Use DB
 ```sql
-use college
+use college;
 ```
 
 ## Create Table
@@ -93,5 +93,11 @@ CREATE TABLE student(
     name VARCHAR(30),
     age INT NOT NULL
 );
+
+```
+## Insert Data into tables
+
+```sql
+INSERT INTO student VALUES(1,"FAIZAN",26);
 
 ```

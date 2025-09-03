@@ -226,3 +226,13 @@ select distinct city from student;
 - data fetch based on conditions
 
 ![where](<Screenshot 2025-09-03 183621.png>)
+
+```sql
+select * from student where marks>=80;
+```
+![where clause](<Screenshot 2025-09-03 184028.png>)
+
+```sql
+select * from student where city="Delhi";
+```
+![alt city](<Screenshot 2025-09-03 184410.png>)

@@ -236,3 +236,16 @@ select * from student where marks>=80;
 select * from student where city="Delhi";
 ```
 ![alt city](<Screenshot 2025-09-03 184410.png>)
+
+## Where Clause Operator
+
+![Operators](<Screenshot 2025-09-03 190929.png>)
+
+## Airthmatic operator in Where clause
+
+```sql
+select * from student where marks+10>100;
+select * from student where marks >80 AND city="Mumbai";
+```
+
+

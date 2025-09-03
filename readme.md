@@ -105,6 +105,9 @@ INSERT INTO student VALUES(3,"RAJPAL",30);
 
 ```
 
+## Insert  Mulitiple Data into tables
+![alt text](<Screenshot 2025-09-03 161000.png>)
+
 ## View/Print Whole Table
 
 ```sql
@@ -122,3 +125,28 @@ select * from student;
 ## Database related queries
 
 ![Database related queries](<Screenshot 2025-09-03 131257.png>)
+
+## Constraints
+- SQL Constraints are used to specify rules for data in a table;
+![Constraints](<Screenshot 2025-09-03 163103.png>)
+
+
+##  2nd way to write primary key
+ ![Primary key](<Screenshot 2025-09-03 163713.png>)
+
+ ## Foreign key and default
+ ![foreign](<Screenshot 2025-09-03 164026.png>)
+
+ ## check constraints
+ ```sql
+ create table students(
+stud_id int primary key, 
+name varchar(20),
+city varchar(20),
+age int,
+ constraint age_check check (age>=18 AND city="Delhi")
+);
+```
+
+![Check constraints](<Screenshot 2025-09-03 174237.png>)
+

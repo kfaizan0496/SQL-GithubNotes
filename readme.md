@@ -68,3 +68,30 @@ ORDER BY age DESC;
 
 - [W3Schools SQL Tutorial](https://www.w3schools.com/sql/)
 - [SQL Official Documentation](https://www.iso.org/standard/63555.html)
+
+# Self learning
+
+## create Database
+
+```sql
+create college;
+
+```
+
+## Use DB
+```sql
+use college
+```
+
+## Create Table
+
+![table](<Screenshot 2025-09-03 125159.png>)
+
+```sql
+CREATE TABLE student(
+    id INT PRIMARY KEY,
+    name VARCHAR(30),
+    age INT NOT NULL
+);
+
+```

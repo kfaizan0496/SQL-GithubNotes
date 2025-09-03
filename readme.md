@@ -209,3 +209,14 @@ select * from student;
 ```
 
 ![all data](<Screenshot 2025-09-03 182921.png>)
+
+
+## use "DISTINCT" Keyword
+- used to extract unique data no duplicacy allowed
+
+```sql
+select distinct city from student;
+
+```
+
+![distinct](<Screenshot 2025-09-03 183250.png>)

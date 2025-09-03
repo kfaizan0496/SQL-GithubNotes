@@ -220,3 +220,9 @@ select distinct city from student;
 ```
 
 ![distinct](<Screenshot 2025-09-03 183250.png>)
+
+
+## WHERE CLAUSE
+- data fetch based on conditions
+
+![where](<Screenshot 2025-09-03 183621.png>)

@@ -150,3 +150,62 @@ age int,
 
 ![Check constraints](<Screenshot 2025-09-03 174237.png>)
 
+
+# project
+- create database for college.
+- create table of students.
+- insert values
+
+```sql
+create database college;
+
+
+```
+1.**Use Database**
+```sql
+use college;
+
+```
+
+
+2.**create table**
+```sql
+
+create table student(
+rollno int primary key,
+name varchar(50),
+marks  int not null,
+grade varchar(1),
+city varchar(20)
+
+);
+
+```
+
+3.***insert Values**
+```sql
+
+insert into student(rollno,name,marks,grade,city)
+values
+(101,"Anil",78,"C","Pune"),
+(102,"Bhumika",93,"A","Mumbai"),
+(103,"Chetan",85,"B","Mumbai"),
+(104,"Dhruv",96,"A","Delhi"),
+(105,"Emanuel",12,"F","Delhi"),
+(106,"Farah",82,"B","Delhi");
+
+```
+
+4.**View data based on query**
+```sql
+select name,marks from student;
+```
+![data](<Screenshot 2025-09-03 182721.png>)
+
+5.**View all Table Data**
+```sql
+select * from student;
+
+```
+
+![all data](<Screenshot 2025-09-03 182921.png>)

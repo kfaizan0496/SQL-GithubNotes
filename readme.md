@@ -99,5 +99,26 @@ CREATE TABLE student(
 
 ```sql
 INSERT INTO student VALUES(1,"FAIZAN",26);
+INSERT INTO student VALUES(2,"GHAZI",28);
+INSERT INTO student VALUES(3,"RAJPAL",30);
+
 
 ```
+
+## View/Print Whole Table
+
+```sql
+select * from student;
+```
+
+## SQL Datatypes
+
+![datatypes](<Screenshot 2025-09-03 130441.png>)
+
+## Types of SQL commands
+
+![SQL Commands](<Screenshot 2025-09-03 130934.png>)
+
+## Database related queries
+
+![Database related queries](<Screenshot 2025-09-03 131257.png>)

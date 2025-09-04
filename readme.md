@@ -284,6 +284,7 @@ select * from student order by city asc;
 
 ## Aggregate functions
 ![aggregate functions](<Screenshot 2025-09-03 190929-1.png>)
+![aggregate](<Screenshot 2025-09-04 150030.png>)
 
 1. **MAX()**
 - return max value
@@ -310,8 +311,8 @@ select count(rollno) from student;
 ```
 
 ## GROUP BY
-![group by](<Screenshot 2025-09-03 190929-1-1.png>)
 
+![group](<Screenshot 2025-09-04 172544.png>)
 ```sql
 select city, count(name)
 from student group by city;

@@ -302,3 +302,18 @@ select min(marks) from student;
 ```sql
 select avg(marks) from student;
 ```
+
+3. **COUNT()**
+- return  no of  tuples
+```sql
+select count(rollno) from student;
+```
+
+## GROUP BY
+![group by](<Screenshot 2025-09-03 190929-1-1.png>)
+
+```sql
+select city, count(name)
+from student group by city;
+```
+![group By](<Screenshot 2025-09-04 173012.png>)

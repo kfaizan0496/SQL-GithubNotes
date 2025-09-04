@@ -246,6 +246,59 @@ select * from student where city="Delhi";
 ```sql
 select * from student where marks+10>100;
 select * from student where marks >80 AND city="Mumbai";
+select * from student where marks>90 OR city="Delhi";
+```
+
+1. **Between**
+- data extract between the ranges
+```sql
+select * from student where marks  Between 80 AND 90;
 ```
 
 
+2. **IN**
+- match any values from the table
+```sql
+select * from student where city in("delhi","Mumbai");
+
+```
+
+3.**NOT IN**
+- negate the condition
+```sql
+select * from student where city not in("delhi","Mumbai");
+```
+
+4.**LIMIT**
+- sets an upper limit on numbers of tuples  to be returned.
+
+```sql
+select * from student limit 3;
+```
+
+5.**ORDER BY**
+- data extract as per need (asc or desc)
+```sql
+select * from student order by city asc;
+```
+
+## Aggregate functions
+![aggregate functions](<Screenshot 2025-09-03 190929-1.png>)
+
+1.**MAX()**
+- return max value
+```sql
+select max(marks) from student;
+```
+
+2.**MIN()**
+- return  min value
+```sql
+select min(marks) from student;
+```
+
+3.**AVG()**
+- return  avg value
+```sql
+select avg(marks) from student;
+```

@@ -285,19 +285,19 @@ select * from student order by city asc;
 ## Aggregate functions
 ![aggregate functions](<Screenshot 2025-09-03 190929-1.png>)
 
-1.**MAX()**
+1. **MAX()**
 - return max value
 ```sql
 select max(marks) from student;
 ```
 
-2.**MIN()**
+2. **MIN()**
 - return  min value
 ```sql
 select min(marks) from student;
 ```
 
-3.**AVG()**
+3. **AVG()**
 - return  avg value
 ```sql
 select avg(marks) from student;

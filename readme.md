@@ -444,3 +444,7 @@ foreign key(dept_id) references dept
 ![alt text](<Screenshot 2025-09-04 185343.png>)
 ![alt text](<Screenshot 2025-09-04 185412.png>)
 ![alt text](<Screenshot 2025-09-04 185712.png>)
+
+## Cascading for FK
+
+![alt text](<Screenshot 2025-09-04 190045.png>)

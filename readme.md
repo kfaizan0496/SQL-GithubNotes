@@ -318,3 +318,105 @@ select city, count(name)
 from student group by city;
 ```
 ![group By](<Screenshot 2025-09-04 173012.png>)
+
+```sql
+
+select grade,count(name)
+from student
+group by grade
+order by grade asc;
+```
+![grade](<Screenshot 2025-09-04 174748.png>)
+
+## Having Clause
+- similar to where i.e applies some condition on rows.
+- used when we want to apply any condition after grouping.
+
+![having clause](<Screenshot 2025-09-04 175003.png>)
+
+```sql
+select city,count(rollno)
+from student
+group by city
+having max(marks)>90;
+```
+![alt text](<Screenshot 2025-09-04 175503.png>)
+
+## General Order
+![alt text](<Screenshot 2025-09-04 175620.png>)
+```sql
+select city
+from student
+where grade="A"
+group by city
+having max(marks)>=93
+order by city asc;
+```
+![alt text](<Screenshot 2025-09-04 180057.png>)
+
+## Table related queries
+![alt text](<Screenshot 2025-09-04 180518.png>)
+
+## update queries are not executing due to safe mode is on
+```sql
+update student
+set grade="O"
+where grade="A";   
+```
+**Error occuring**
+![error](<Screenshot 2025-09-04 181413.png>)
+
+**How to disable safe mode**
+```sql 
+
+set sql_safe_updates=0;
+
+```
+
+
+## Updating Table Data
+-  see in the table where all the grade A is replaced by grade O
+```sql
+update student
+set grade="O"
+where grade="A";   
+```
+**View Table**
+```sql
+select * from student;
+```
+
+![updatesd table](<Screenshot 2025-09-04 181826.png>)
+
+- update the marks 92 insted of 12  of roll no 105 
+```sql
+update student
+set marks=82
+where rollno=105; 
+```
+
+```sql
+update student
+set grade="B"
+where marks  between 80 AND 90; 
+```
+
+```sql
+update student
+set marks=marks+1;
+
+```
+
+## Delete table data
+ 
+![delete](<Screenshot 2025-09-04 183001.png>)
+
+```sql
+delete  from student
+where marks<33;
+```
+
+**delete whole table data**
+```sql
+delete from student;
+```

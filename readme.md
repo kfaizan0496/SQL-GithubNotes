@@ -420,3 +420,27 @@ where marks<33;
 ```sql
 delete from student;
 ```
+
+
+## create tables
+```sql
+create table dept(
+id int  primary key,
+name varchar(20)
+);
+
+
+create table teacher(
+id int primary key,
+name varchar(50),
+foreign key(dept_id) references dept
+
+);
+```
+
+**How to Visualizes Tables in MYSQL**
+- click on database 
+- after click on reverse engineering
+![alt text](<Screenshot 2025-09-04 185343.png>)
+![alt text](<Screenshot 2025-09-04 185412.png>)
+![alt text](<Screenshot 2025-09-04 185712.png>)

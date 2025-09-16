@@ -485,7 +485,7 @@ WHERE CustomerName LIKE '_a%';
 ```
 
 
-- Ques : Select all customers that which have the 2nd last letter "a"
+- Ques : Select all customers name  which have the 2nd last letter "a"
 ```sql
 SELECT * FROM Customers
 WHERE CustomerName LIKE '%a_';
@@ -493,7 +493,7 @@ WHERE CustomerName LIKE '%a_';
 ```
 
 
-- Ques : Select all customers that which name have  the 3rd   letter "a"
+- Ques : Select all customers name that which  have  the 3rd   letter "a"
 ```sql
 SELECT * FROM Customers
 WHERE CustomerName LIKE '__a%';
@@ -502,9 +502,17 @@ WHERE CustomerName LIKE '__a%';
 
 
 
-- Ques : Select all customers that which name have  the starts and end   letter "a"
+- Ques : Select all customers name  which  have starts and end   letter "a"
 ```sql
 SELECT * FROM Customers
 WHERE CustomerName LIKE 'a%a';
+
+```
+
+
+- Ques : Select all customers  name  which have "og" at any places. 
+```sql
+SELECT * FROM Customers
+WHERE CustomerName LIKE '%og%';
 
 ```

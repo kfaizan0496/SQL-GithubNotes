@@ -448,3 +448,63 @@ foreign key(dept_id) references dept
 ## Cascading for FK
 
 ![alt text](<Screenshot 2025-09-04 190045.png>)
+
+
+# Like Operator
+- The LIKE operator is used in a WHERE clause to search for a specified pattern in a column.
+
+- There are two wildcards often used in conjunction with the LIKE operator:
+
+- The percent sign % represents zero, one, or multiple characters
+- The underscore sign _ represents one, single character
+
+- Ques : Select all customers that starts with the letter "a"
+```sql
+
+SELECT * FROM Customers
+WHERE CustomerName LIKE 'a%';
+
+```
+
+![alt text](<Screenshot 2025-09-16 170105.png>)
+
+- Ques : Select all customers that ends with the letter "a"
+```sql
+SELECT * FROM Customers
+WHERE CustomerName LIKE '%a';
+
+```
+![alt text](<Screenshot 2025-09-16 170358.png>)
+
+
+- Ques : Select all customers that which have the 2nd  letter "a"
+```sql
+SELECT * FROM Customers
+WHERE CustomerName LIKE '_a%';
+
+```
+
+
+- Ques : Select all customers that which have the 2nd last letter "a"
+```sql
+SELECT * FROM Customers
+WHERE CustomerName LIKE '%a_';
+
+```
+
+
+- Ques : Select all customers that which name have  the 3rd   letter "a"
+```sql
+SELECT * FROM Customers
+WHERE CustomerName LIKE '__a%';
+
+```
+
+
+
+- Ques : Select all customers that which name have  the starts and end   letter "a"
+```sql
+SELECT * FROM Customers
+WHERE CustomerName LIKE 'a%a';
+
+```

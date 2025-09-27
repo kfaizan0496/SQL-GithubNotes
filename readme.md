@@ -275,6 +275,24 @@ select * from student where city not in("delhi","Mumbai");
 ```sql
 select * from student limit 3;
 ```
+- extract the tuple as per need like i want to extract 10 tuples only
+```sql
+ select * from students limit 10;
+```
+
+- extract the tuple as per need like i want to extract top 10 marks
+```sql
+ select * from students order by marks desc   limit 10;
+```
+
+- extract the tuple as per need like i want to extract top 2nd highest  marks
+```sql
+ select * from students order by marks desc   limit 1 offset 1;
+```
+
+- Note :-- Offset works on indexing 
+
+
 
 5.**ORDER BY**
 - data extract as per need (asc or desc)
@@ -516,3 +534,41 @@ SELECT * FROM Customers
 WHERE CustomerName LIKE '%og%';
 
 ```
+
+
+## Difference between delete,drop,turncate??
+
+1.**Delete**
+- Delete command is used to delete  specific row from the table if we are using with where clause 
+but if we are using without where clause whole table table data will be deleted but structure(Schema) of table remain same .. 
+in case of delete command  we can rollback the data ..
+
+
+2.**Turncate**
+- Turncate command is used to delete whole table data but structure will remain same 
+in this case we can't rollback the data
+
+
+3.**Drop**
+- Drop command is used to delete the whole table record as well as structure 
+in this case we can't rollback the data
+
+
+
+## Database Language
+
+1.**DML** (Data Manipulation Language)
+-   Insert, Update, Delete
+
+2.**DDL** (Data Defination Language)
+-  Create, Alter,Drop,Turncate
+
+3.**DQL** (Data Query Language)
+- Select
+
+4.**TCL** (Transaction Control Language)
+- Rollback,Commit,wait,save
+
+5.**DCL** (Data Control Language)
+- grant,Revoke
+
